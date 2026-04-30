@@ -94,4 +94,10 @@ Over time, families and local groups created small rule variations, but the core
     <string name="trivia_section3_title">Cultural note</string>
     <string name="trivia_section3_body">For many people, Hokm is both a game and a shared tradition played across generations.</string>
 
+    <string name="about_note">Important: This page provides a quick orientation before you dive into detailed sections.</string>
+    <string name="settings_note">Tip: Keep defaults for a clean reading experience; customization can come later.</string>
+    <string name="rules_note">Important: Following suit when possible is one of the key principles in Hokm.</string>
+    <string name="terms_note">Tip: Learning these core terms first will make advanced rules much easier to understand.</string>
+    <string name="history_note">Did you know? Hokm has remained popular largely because of its team strategy depth.</string>
+    <string name="trivia_note">Fun fact: Even experienced players discover new tactical patterns over time.</string>
 </resources>
