@@ -10,8 +10,11 @@ android {
         applicationId "com.example.androidautobuildapk"
         minSdk 21
         targetSdk 32
-        versionCode 1
-        versionName "1.0"
+
+        def versionCodeProp = project.findProperty('appVersionCode')
+        def versionNameProp = project.findProperty('appVersionName')
+        versionCode versionCodeProp ? versionCodeProp.toString().toInteger() : 1
+        versionName versionNameProp ? versionNameProp.toString() : "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
