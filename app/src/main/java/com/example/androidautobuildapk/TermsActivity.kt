@@ -10,6 +10,12 @@ class TermsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_text_page)
         title = getString(R.string.menu_terms)
 
-        findViewById<TextView>(R.id.contentText).text = getString(R.string.terms_content)
+        findViewById<TextView>(R.id.tocContent).text = getString(R.string.terms_toc)
+        findViewById<TextView>(R.id.section1Title).text = getString(R.string.terms_section1_title)
+        findViewById<TextView>(R.id.section1Body).text = getString(R.string.terms_section1_body)
+        findViewById<TextView>(R.id.section2Title).text = getString(R.string.terms_section2_title)
+        findViewById<TextView>(R.id.section2Body).text = getString(R.string.terms_section2_body)
+        findViewById<TextView>(R.id.section3Title).text = getString(R.string.terms_section3_title)
+        findViewById<TextView>(R.id.section3Body).text = getString(R.string.terms_section3_body)
     }
 }
