@@ -27,4 +27,10 @@ Over time, families and local groups created small rule variations, but the core
 • Team communication is indirect: players cannot reveal cards, so timing and card memory are important.
 • Winning early tricks can help read opponents, but holding strong cards for later can also be decisive.
 • Many players learn Hokm at home, making it both a game and a cultural tradition.</string>
+    <string name="subtitle_rules">Learn the official rules of Hokm</string>
+    <string name="subtitle_terms">Understand key terms and meanings</string>
+    <string name="subtitle_history">Explore origins and evolution</string>
+    <string name="subtitle_trivia">Test your knowledge and have fun</string>
+    <string name="already_on_home">You are already on Home</string>
+    <string name="coming_soon">Coming soon</string>
 </resources>
