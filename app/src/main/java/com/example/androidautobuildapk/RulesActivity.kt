@@ -1,11 +1,18 @@
 package com.example.androidautobuildapk
 
+<<<<<<< codex/evaluate-modifying-existing-android-project-eecnx3
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
+=======
+import android.os.Bundle
+import android.view.View
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+>>>>>>> main
 
 class RulesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +23,7 @@ class RulesActivity : AppCompatActivity() {
         val s1 = findViewById<TextView>(R.id.section1Title)
         val s2 = findViewById<TextView>(R.id.section2Title)
         val s3 = findViewById<TextView>(R.id.section3Title)
+<<<<<<< codex/evaluate-modifying-existing-android-project-eecnx3
         val b1 = findViewById<TextView>(R.id.section1Body)
         val b2 = findViewById<TextView>(R.id.section2Body)
         val b3 = findViewById<TextView>(R.id.section3Body)
@@ -66,6 +74,28 @@ class RulesActivity : AppCompatActivity() {
             "about" -> if (section == 1) R.drawable.ic_info_24 else if (section == 2) R.drawable.ic_book_24 else R.drawable.ic_lightbulb_24
             "settings" -> if (section == 1) R.drawable.ic_info_24 else if (section == 2) R.drawable.ic_history_24 else R.drawable.ic_lightbulb_24
             else -> R.drawable.ic_info_24
+=======
+
+        s1.text = getString(R.string.rules_section1_title)
+        findViewById<TextView>(R.id.section1Body).text = getString(R.string.rules_section1_body)
+        s2.text = getString(R.string.rules_section2_title)
+        findViewById<TextView>(R.id.section2Body).text = getString(R.string.rules_section2_body)
+        s3.text = getString(R.string.rules_section3_title)
+        findViewById<TextView>(R.id.section3Body).text = getString(R.string.rules_section3_body)
+        findViewById<TextView>(R.id.highlightNote).text = getString(R.string.rules_note)
+
+        findViewById<com.google.android.material.button.MaterialButton>(R.id.tocButton1).apply {
+            text = "1. " + s1.text
+            setOnClickListener { findViewById<View>(R.id.section1Card).requestFocus() }
+        }
+        findViewById<com.google.android.material.button.MaterialButton>(R.id.tocButton2).apply {
+            text = "2. " + s2.text
+            setOnClickListener { findViewById<View>(R.id.section2Card).requestFocus() }
+        }
+        findViewById<com.google.android.material.button.MaterialButton>(R.id.tocButton3).apply {
+            text = "3. " + s3.text
+            setOnClickListener { findViewById<View>(R.id.section3Card).requestFocus() }
+>>>>>>> main
         }
     }
 }
