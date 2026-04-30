@@ -30,12 +30,15 @@ jobs:
     - name: Make gradlew executable
       run: chmod +x gradlew
 
-    - name: Build Debug APK
-      run: ./gradlew assembleDebug
-
+    # ✅ Decode keystore EARLY
     - name: Decode signing keystore
-      run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > keystore.jks
+      run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > $GITHUB_WORKSPACE/keystore.jks
 
+    # ✅ Clean build (important)
+    - name: Clean project
+      run: ./gradlew clean
+
+    # ✅ Build signed release APK
     - name: Build Signed Release APK
       run: |
         ./gradlew assembleRelease \
@@ -43,12 +46,6 @@ jobs:
           -Pandroid.injected.signing.store.password=${{ secrets.KEYSTORE_PASSWORD }} \
           -Pandroid.injected.signing.key.alias=${{ secrets.KEY_ALIAS }} \
           -Pandroid.injected.signing.key.password=${{ secrets.KEY_PASSWORD }}
-
-    - name: Upload Debug APK
-      uses: actions/upload-artifact@v4
-      with:
-        name: app-debug
-        path: app/build/outputs/apk/debug/*.apk
 
     - name: Upload Signed Release APK
       uses: actions/upload-artifact@v4
