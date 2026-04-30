@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">AndroidAutoBuildAPK</string>
+    <string name="app_name">Hokm Encyclopedia</string>
+    <string name="home_title">Hokm Encyclopedia</string>
+
+    <string name="menu_about">About</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_rules">Rules</string>
+    <string name="menu_terms">Terms</string>
+    <string name="menu_history">History of Hokm</string>
+    <string name="menu_trivia">Hokm Trivia</string>
+
+    <string name="about_content">This app is a lightweight offline encyclopedia for Hokm.\n\nVersion 1 focuses on fast startup, clean text pages, and simple navigation.\n\nFuture versions can add images, diagrams, and optional media.</string>
+    <string name="settings_content">Settings page (starter version).\n\nIn this first release, no configurable options are enabled yet.\n\nFuture updates can include font size, dark mode, and language preferences.</string>
+    <string name="rules_content">Hokm Rules (short starter text).\n\n1) Hokm is usually played by 4 players in teams of two.\n2) Each round has a trump suit chosen by the Hakem.\n3) Players must follow suit when possible.\n4) If a player cannot follow suit, they may play trump or any other card.\n5) The team that wins most tricks wins the hand.</string>
+    <string name="terms_content">Hokm Terms (starter glossary).\n\nHakem: The player who chooses trump.\nTrump (Hokm): The suit that can beat cards from other suits.\nTrick: One set of four played cards, one per player.\nLead: The first card played in a trick.\nFollow suit: Playing the same suit as the lead card when possible.</string>
+    <string name="history_content">History of Hokm.
+
+Hokm is a popular trick-taking card game in Iran and neighboring regions. Its name means "trump" or "ruling suit."
+
+The game likely evolved from older trick-taking traditions and became a social favorite because it is easy to start, strategic to master, and enjoyable in teams.
+
+Over time, families and local groups created small rule variations, but the core idea stayed the same: choose a trump suit, win tricks, and cooperate with your partner.</string>
+    <string name="trivia_content">Hokm Trivia.
+
+• The word "Hokm" refers to the trump suit selected at the beginning of a hand.
+• Team communication is indirect: players cannot reveal cards, so timing and card memory are important.
+• Winning early tricks can help read opponents, but holding strong cards for later can also be decisive.
+• Many players learn Hokm at home, making it both a game and a cultural tradition.</string>
 </resources>
