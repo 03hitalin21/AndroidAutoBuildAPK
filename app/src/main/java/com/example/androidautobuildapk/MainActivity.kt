@@ -4,9 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -20,10 +19,10 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, getString(R.string.already_on_home), Toast.LENGTH_SHORT).show()
         }
         findViewById<View>(R.id.bookmarksFooterButton).setOnClickListener {
-            Toast.makeText(this, getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, BookmarksActivity::class.java))
         }
         findViewById<View>(R.id.favoritesFooterButton).setOnClickListener {
-            Toast.makeText(this, getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, FavoritesActivity::class.java))
         }
         findViewById<View>(R.id.settingsFooterButton).setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))

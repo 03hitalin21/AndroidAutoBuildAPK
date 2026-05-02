@@ -103,4 +103,11 @@ Over time, families and local groups created small rule variations, but the core
     <string name="settings_theme_title">Appearance</string>
     <string name="settings_dark_mode">Enable dark mode</string>
     <string name="settings_theme_hint">Switch between day and night mode for the whole app.</string>
+
+    <string name="menu_bookmarks">Bookmarks</string>
+    <string name="menu_favorites">Favorites</string>
+    <string name="added_bookmark">Added to bookmarks</string>
+    <string name="removed_bookmark">Removed from bookmarks</string>
+    <string name="added_favorite">Added to favorites</string>
+    <string name="removed_favorite">Removed from favorites</string>
 </resources>

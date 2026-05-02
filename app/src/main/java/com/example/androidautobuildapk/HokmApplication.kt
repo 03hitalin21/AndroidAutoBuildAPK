@@ -5,6 +5,9 @@ import android.app.Application
 class HokmApplication : Application() {
     override fun onCreate() {
         super.onCreate()
-        ThemePreferences.applySavedTheme(this)
+        UserPreferences.applyTheme(this)
+        if (UserPreferences.getLanguage(this) == "system") {
+            UserPreferences.setLanguage(this, java.util.Locale.getDefault().language)
+        }
     }
 }
