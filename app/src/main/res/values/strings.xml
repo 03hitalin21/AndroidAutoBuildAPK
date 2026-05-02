@@ -62,7 +62,7 @@ Over time, families and local groups created small rule variations, but the core
     <string name="rules_section2_title">Trump and tricks</string>
     <string name="rules_section2_body">Trump (Hokm) is chosen at the start of each hand, most often by the Hakem after seeing an initial set of cards. In every trick, the first card sets the lead suit and all players must follow that suit if they can. If a player cannot follow suit, they may play any card: a trump card to try to win, or a discard from another suit. The winner of each trick leads the next trick, so control of the lead is a major strategic advantage.</string>
     <string name="rules_section3_title">Winning a hand</string>
-    <string name="rules_section3_body">Most tables score one game point for each hand won by taking at least 7 of 13 tricks. A standard match is often first to 7 points, though some groups play longer sets. If both teams finish with the same number of game points in a set, play continues until one team leads by at least one full point under the table&apos;s tie-break rule. In some variants, winning all tricks or giving opponents zero tricks (Beshkan) awards bonus value.</string>
+    <string name="rules_section3_body">Most tables score one game point for each hand won by taking at least 7 of 13 tricks. A standard match is often first to 7 points, though some groups play longer sets. If both teams are tied in total game points, play continues until one team leads under the table&apos;s tie-break rule. In some variants, winning all tricks or holding opponents to zero tricks (Beshkan) gives bonus value.</string>
 
     <string name="terms_toc">1. Hakem
 2. Trump
