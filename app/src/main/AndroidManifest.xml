@@ -4,6 +4,7 @@
     package="com.example.androidautobuildapk">
 
     <application
+        android:name=".HokmApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,10 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidAutoBuildAPK"
         tools:targetApi="31">
-<<<<<<< codex/evaluate-modifying-existing-android-project-eecnx3
         <activity android:name=".SectionDetailActivity" />
-=======
->>>>>>> main
         <activity android:name=".TriviaActivity" />
         <activity android:name=".HistoryActivity" />
         <activity android:name=".TermsActivity" />
@@ -28,7 +26,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
