@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8E8"
+    android:padding="16dp">
+
+    <TextView android:id="@+id/quizProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" />
+    <TextView android:id="@+id/quizQuestion" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textSize="20sp" />
+
+    <com.google.android.material.button.MaterialButton android:id="@+id/choiceA" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/choiceB" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/choiceC" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/choiceD" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+
+    <TextView android:id="@+id/quizResult" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:textSize="18sp" android:textStyle="bold" android:visibility="gone" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/retryQuiz" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Retry" android:visibility="gone" />
+</LinearLayout>
