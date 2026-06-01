@@ -25,4 +25,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/termSource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/terms_sources_note"
+        android:textColor="#5D5730"
+        android:textSize="12sp" />
 </LinearLayout>

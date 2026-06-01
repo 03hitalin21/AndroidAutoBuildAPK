@@ -51,5 +51,16 @@
             android:textStyle="bold"
             android:lineSpacingExtra="4dp" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="#FFFDE7"
+            android:lineSpacingExtra="5dp"
+            android:padding="12dp"
+            android:text="@string/content_sources_note"
+            android:textColor="#3E3A17"
+            android:textSize="14sp" />
+
     </LinearLayout>
 </ScrollView>
