@@ -16,6 +16,6 @@ class SectionDetailActivity : BaseActivity() {
         title = titleText
         findViewById<ImageView>(R.id.detailIcon).setImageResource(iconRes)
         findViewById<TextView>(R.id.detailTitle).text = titleText
-        findViewById<TextView>(R.id.detailBody).text = bodyText
+        findViewById<TextView>(R.id.detailBody).text = getString(R.string.detail_body_with_sources, bodyText, getString(R.string.content_sources_note))
     }
 }

@@ -165,5 +165,18 @@
             android:textSize="16sp"
             android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/sourcesNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFDE7"
+            android:lineSpacingExtra="5dp"
+            android:padding="14dp"
+            android:text="@string/content_sources_note"
+            android:textColor="#3E3A17"
+            android:textSize="14sp" />
+
     </LinearLayout>
 </ScrollView>

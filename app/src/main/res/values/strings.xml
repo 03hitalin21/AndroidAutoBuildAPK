@@ -27,6 +27,15 @@ Over time, families and local groups created small rule variations, but the core
 • Team communication is indirect: players cannot reveal cards, so timing and card memory are important.
 • Winning early tricks can help read opponents, but holding strong cards for later can also be decisive.
 • Many players learn Hokm at home, making it both a game and a cultural tradition.</string>
+    <string name="content_sources_note">Sources and copyright note:
+• The explanatory lessons, glossary examples, quiz questions, and strategy notes in this app are original content written by the Hokm Encyclopedia app team.
+• Factual background was cross-checked against public rule summaries for Hokm, Court Piece, Rang, and general trick-taking card-game terminology, including Pagat card-game rules (https://www.pagat.com), Bicycle Cards rules resources (https://bicyclecards.com/how-to-play), and Encyclopaedia Britannica background on playing cards (https://www.britannica.com/topic/playing-card).
+• No third-party article text, images, audio, or video are copied into the app. If future versions use additional books, websites, or media, they will be listed here.</string>
+    <string name="sources_title">Sources and copyright note</string>
+    <string name="detail_body_with_sources">%1$s\n\n%2$s</string>
+    <string name="terms_sources_note">Tap any term to read its definition and example. Definitions are original wording by the Hokm Encyclopedia app team, cross-checked against common trick-taking card-game terminology.</string>
+    <string name="trivia_sources_note">Quiz questions are original review questions based on the app lessons and common Hokm table rules.</string>
+
     <string name="subtitle_rules">Learn the official rules of Hokm</string>
     <string name="subtitle_terms">Understand key terms and meanings</string>
     <string name="subtitle_history">Explore origins and evolution</string>
@@ -38,11 +47,11 @@ Over time, families and local groups created small rule variations, but the core
 2. Version focus
 3. Roadmap</string>
     <string name="about_section1_title">Purpose</string>
-    <string name="about_section1_body">Hokm Encyclopedia is a lightweight offline reading app focused on clear explanations about the Hokm card game.</string>
+    <string name="about_section1_body">Hokm Encyclopedia is an offline reading and learning app about Hokm, also known in some regions as Court Piece or Rang. The content is written by the app team in original explanatory language and is organized for beginners who want a clear path from table setup to strategy. Instead of copying a rule page from the web, the app breaks the game into short lessons, examples, searchable terminology, history notes, and a quiz so users can learn step by step.</string>
     <string name="about_section2_title">Version 1 focus</string>
-    <string name="about_section2_body">This first version prioritizes readable text pages, simple navigation, and low complexity for easy updates.</string>
+    <string name="about_section2_body">This release focuses on readable offline lessons, practical examples, a glossary, save/favorite actions, display preferences, and a trivia practice mode. The goal is to provide more value than a quick internet search by combining multiple learning formats in one app: rules, examples, common table variations, cultural context, and review questions. The app does not use copied images, videos, or third-party article text.</string>
     <string name="about_section3_title">Roadmap</string>
-    <string name="about_section3_body">Future releases can add images, examples, and optional multimedia while preserving fast startup and offline support.</string>
+    <string name="about_section3_body">Future releases can add diagrams of table position, Persian-language lessons, sample hands, and optional media while preserving fast startup and offline support. When new external references are used, the source list in the app will be updated so users and reviewers can see the origin of factual material.</string>
 
     <string name="settings_toc">1. Reading options
 2. Navigation
@@ -58,41 +67,41 @@ Over time, families and local groups created small rule variations, but the core
 2. Trump and tricks
 3. Winning a hand</string>
     <string name="rules_section1_title">Players and teams</string>
-    <string name="rules_section1_body">Hokm is played by four players in two fixed teams of two. Teams are usually decided by drawing cards, by agreement, or by winners staying together for the next game. Partners sit opposite each other so turns alternate team-by-team around the table. A dealer shuffles, offers a cut, and deals cards in packets (often 5-4-4 or 5-5-3 depending on house rules) until each player has 13 cards.</string>
+    <string name="rules_section1_body">Hokm is played by four players in two fixed teams of two. Partners sit opposite each other so the turn order alternates between teams around the table. A standard 52-card deck is used and each player eventually receives 13 cards. Many tables deal the first five cards to the Hakem before the trump suit is chosen, then continue dealing the remaining cards in packets. Other tables use packet patterns such as 5-4-4 or 5-5-3. Before play starts, players should agree on the dealing style, target score, penalties for reneging, and whether special results such as winning all tricks receive bonus points.</string>
     <string name="rules_section2_title">Trump and tricks</string>
-    <string name="rules_section2_body">Trump (Hokm) is chosen at the start of each hand, most often by the Hakem after seeing an initial set of cards. In every trick, the first card sets the lead suit and all players must follow that suit if they can. If a player cannot follow suit, they may play any card: a trump card to try to win, or a discard from another suit. The winner of each trick leads the next trick, so control of the lead is a major strategic advantage.</string>
+    <string name="rules_section2_body">Trump, called Hokm, is chosen at the start of each hand, most often by the Hakem after seeing an initial set of cards. In every trick, the first card sets the lead suit and all players must follow that suit if they can. If a player cannot follow suit, they may play any card: a trump card to try to win the trick or a discard from another suit to protect stronger cards. The highest card in the lead suit wins unless at least one trump is played; when trump appears, the highest trump wins. The winner of each trick leads the next trick, so gaining and keeping the lead is a major strategic advantage.</string>
     <string name="rules_section3_title">Winning a hand</string>
-    <string name="rules_section3_body">Most tables score one game point for each hand won by taking at least 7 of 13 tricks. A standard match is often first to 7 points, though some groups play longer sets. If both teams are tied in total game points, play continues until one team leads under the table\'s tie-break rule. In some variants, winning all tricks or holding opponents to zero tricks (Beshkan) gives bonus value.</string>
+    <string name="rules_section3_body">A hand contains 13 tricks. Most tables award the hand to the first team that reaches 7 tricks because the other team can no longer catch up. A full game is commonly played to 7 hand points, but families and clubs may choose 5, 9, or another target before starting. Some groups score special outcomes: winning the first seven tricks without allowing the opponents to score can count more, and taking all thirteen tricks can carry a larger bonus. If a player reneges by failing to follow suit while able to do so, the usual friendly-table solution is to correct the trick if discovered immediately or award a penalty hand if discovered later.</string>
 
     <string name="terms_toc">1. Hakem
 2. Trump
 3. Trick and lead</string>
     <string name="terms_section1_title">Hakem</string>
-    <string name="terms_section1_body">Hakem is the player who chooses the trump suit at the beginning of the hand.</string>
+    <string name="terms_section1_body">Hakem is the player who chooses the trump suit at the beginning of a hand. At many tables the first Hakem is selected by the highest card drawn before the match. After that, the Hakem role usually stays with the winner of the previous hand or passes according to the local rule agreed before play.</string>
     <string name="terms_section2_title">Trump (Hokm)</string>
     <string name="terms_section2_body">Trump is the ruling suit that can beat cards from other suits when played on a trick. Managing trump means balancing offense and defense: using trump aggressively to capture key tricks, or conserving trump to stop opponent runs later in the hand.</string>
     <string name="terms_section3_title">Trick and lead</string>
-    <string name="terms_section3_body">A trick is one round of four played cards. The lead is the first card in that trick.</string>
+    <string name="terms_section3_body">A trick is one round of four played cards, one card from each player. The lead is the first card in that trick and it decides which suit other players must follow if they hold that suit. The trick winner collects the four cards for their team and leads the next trick.</string>
 
     <string name="history_toc">1. Origins
 2. Popularity
 3. Local variations</string>
     <string name="history_section1_title">Origins</string>
-    <string name="history_section1_body">Hokm developed from classic trick-taking traditions and became widespread in Iran and nearby regions.</string>
+    <string name="history_section1_body">Hokm developed within the wider family of trick-taking card games, where players follow suit, use a trump suit, and compete to win tricks. In Iran it became known as Hokm because the selected trump suit has a commanding role over other suits. Related games appear under names such as Court Piece or Rang in parts of South Asia, which is why players from different regions often recognize the structure even when local dealing or scoring details differ.</string>
     <string name="history_section2_title">Popularity</string>
     <string name="history_section2_body">Its popularity comes from simple rules, strong strategy depth, and social team-based play. Hokm is often taught informally at home, where people learn practical tactics—counting cards, reading patterns, and coordinating silently with a partner.</string>
     <string name="history_section3_title">Local variations</string>
-    <string name="history_section3_body">Families and communities often adopt minor rule variations, while the core trump-and-trick structure remains the same.</string>
+    <string name="history_section3_body">Families and communities often adopt minor rule variations while the core trump-and-trick structure remains the same. Common differences include who becomes Hakem after a loss, whether dealing is done in 5-4-4 or another packet pattern, how ties are handled near the end of a match, and whether special results such as Beshkan or all-thirteen tricks receive extra value. Because these variations are normal, good etiquette is to explain house rules before the first deal.</string>
 
     <string name="trivia_toc">1. Name meaning
 2. Strategy insight
 3. Cultural note</string>
     <string name="trivia_section1_title">Name meaning</string>
-    <string name="trivia_section1_body">The word "Hokm" refers to the trump suit, the suit that has special power in each hand.</string>
+    <string name="trivia_section1_body">The word Hokm is commonly understood as command, order, or ruling choice. In gameplay it refers to the trump suit, the suit that has special power in each hand. This meaning helps beginners remember that trump cards can override the normal ranking of non-trump suits when players cannot follow the lead suit.</string>
     <string name="trivia_section2_title">Strategy insight</string>
     <string name="trivia_section2_body">Top players balance short-term trick wins with long-term control of trump cards and information. They observe small signals such as hesitation, repeated suit leads, and card tempo to estimate likely holdings.</string>
     <string name="trivia_section3_title">Cultural note</string>
-    <string name="trivia_section3_body">For many people, Hokm is both a game and a shared tradition played across generations.</string>
+    <string name="trivia_section3_body">For many people, Hokm is both a game and a shared tradition played across generations. New players often learn by watching relatives, then slowly understand more advanced ideas such as counting suits, protecting partner winners, avoiding unnecessary trump use, and choosing when to sacrifice a low card to gain information.</string>
 
     <string name="about_note">Important: This page provides a quick orientation before you dive into detailed sections.</string>
     <string name="settings_note">Tip: Keep defaults for a clean reading experience; customization can come later.</string>
