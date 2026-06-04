@@ -1,106 +1,53 @@
 # AndroidAutoBuildAPK
 
-A lightweight Android project that demonstrates:
+AndroidAutoBuildAPK is evolving from a small single-module Android app into a production-grade, contributor-friendly Android platform project.
 
-- A simple multi-page app structure (home + text content pages).
-- Automatic APK builds with GitHub Actions.
-- Signed **release APK** generation in CI using GitHub Secrets.
-- Automatic `versionCode` / `versionName` incrementing per workflow run.
+The app remains a lightweight offline Android experience, while the repository now has the foundations needed for long-term scalability: Kotlin DSL, version catalogs, Gradle convention plugins, module-boundary rules, architecture documentation, and CI workflows that separate pull-request verification from signed release builds.
 
----
+## Repository layout
 
-## App (Current State)
-
-The app now includes:
-
-- `MainActivity` as home page.
-- Navigation buttons for:
-  - About
-  - Settings
-  - Rules
-  - Terms
-- Separate activities for each page:
-  - `AboutActivity`
-  - `SettingsActivity`
-  - `RulesActivity`
-  - `TermsActivity`
-- A shared scrollable text layout (`activity_text_page.xml`) used by all text pages.
-- Text content stored in `app/src/main/res/values/strings.xml`.
-
-This keeps the app minimal, offline-friendly, and easy to extend.
-
----
-
-## CI/CD Workflow
-
-Workflow file: `.github/workflows/build.yml`
-
-On `push`, `pull_request`, or manual trigger, CI does the following:
-
-1. Checks out source code.
-2. Sets up JDK 17.
-3. Sets up Android SDK.
-4. Builds debug APK (`assembleDebug`).
-5. Decodes the signing keystore from `KEYSTORE_BASE64` into `keystore.jks`.
-6. Sets dynamic version values:
-   - `versionCode = github.run_number`
-   - `versionName = 1.<github.run_number>`
-7. Builds signed release APK (`assembleRelease`) with signing + version properties.
-8. Uploads artifacts:
-   - `app-debug`
-   - `app-release-signed`
-
----
-
-## Required GitHub Secrets
-
-To produce signed release APKs in CI, configure these repository secrets:
-
-- `KEYSTORE_BASE64`
-- `KEYSTORE_PASSWORD`
-- `KEY_ALIAS`
-- `KEY_PASSWORD`
-
-### How to create `KEYSTORE_BASE64`
-
-Base64-encode your `keystore.jks` file locally and copy the output into the secret:
-
-```bash
-base64 -w 0 keystore.jks
+```text
+root/
+├── app/                    # Android application shell and current UI screens
+├── core/preferences/       # Shared user preference, theme, language, bookmark, and favorite state
+├── feature/                # Future feature modules when ownership is clear
+├── data/                   # Future data/repository implementation modules
+├── domain/                 # Future domain model/use-case modules
+├── build-logic/            # Gradle convention plugins
+├── docs/                   # Contributor and release documentation
+├── scripts/                # Repeatable helper scripts
+├── testing/                # Shared test utilities when needed
+├── tools/                  # Developer tooling support files
+└── .github/                # CI, templates, and code ownership
 ```
 
-> On macOS, use:
->
-> ```bash
-> base64 keystore.jks | tr -d '\n'
-> ```
+Only `:app` and `:core:preferences` are registered Gradle modules today. The other directories document where future responsibilities belong without adding empty modules.
 
----
+## Architecture documents
 
-## Versioning Behavior
+- [`ARCHITECTURE_REVIEW.md`](ARCHITECTURE_REVIEW.md) — current-state audit, risks, and phase-1 decisions.
+- [`TARGET_ARCHITECTURE.md`](TARGET_ARCHITECTURE.md) — intended module responsibilities and dependency rules.
+- [`MIGRATION_PLAN.md`](MIGRATION_PLAN.md) — phased migration path from the current app to a scalable platform.
+- [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md) — local development and pull request expectations.
+- [`docs/RELEASE.md`](docs/RELEASE.md) — release workflow and signing guidance.
 
-`app/build.gradle` reads optional Gradle project properties:
+## Build system
 
-- `appVersionCode`
-- `appVersionName`
+This repository uses:
 
-If provided (as in CI), they override defaults. Otherwise it falls back to:
+- Kotlin DSL Gradle build files.
+- Version catalogs in `gradle/libs.versions.toml`.
+- Included build convention plugins in `build-logic/`.
+- A module-boundary verification task: `checkModuleBoundaries`.
 
-- `versionCode 1`
-- `versionName "1.0"`
-
-This means local development remains simple, while CI builds are uniquely versioned.
-
----
-
-## Build Locally
+## Build locally
 
 ```bash
 chmod +x gradlew
-./gradlew assembleDebug
+./gradlew checkModuleBoundaries testDebugUnitTest assembleDebug
 ```
 
-To build release locally with custom version values:
+To build a release locally with custom version values:
 
 ```bash
 ./gradlew assembleRelease \
@@ -108,8 +55,38 @@ To build release locally with custom version values:
   -PappVersionName=1.123
 ```
 
----
+## CI/CD
 
-## Project Goal
+Workflow file: `.github/workflows/build.yml`
 
-This repository is evolving into a simple, maintainable offline encyclopedia app (starting with Hokm-related text content), while preserving a practical production-style Android CI pipeline.
+Pull requests and pushes run:
+
+1. Module-boundary verification.
+2. Unit tests.
+3. Debug APK build.
+4. Debug artifact upload.
+
+Signed release APK/AAB generation is available through manual workflow dispatch with `build_release=true`.
+
+## Required GitHub Secrets for signed releases
+
+- `KEYSTORE_BASE64`
+- `KEYSTORE_PASSWORD`
+- `KEY_ALIAS`
+- `KEY_PASSWORD`
+
+### Create `KEYSTORE_BASE64`
+
+```bash
+base64 -w 0 keystore.jks
+```
+
+On macOS:
+
+```bash
+base64 keystore.jks | tr -d '\n'
+```
+
+## Project direction
+
+The project will stay buildable throughout migration. Future modules should be introduced only when they have a clear responsibility, clear dependency direction, and tests appropriate to their risk.

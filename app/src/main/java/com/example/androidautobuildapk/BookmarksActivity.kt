@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.TextView
+import com.example.androidautobuildapk.core.preferences.UserPreferences
 
 class BookmarksActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

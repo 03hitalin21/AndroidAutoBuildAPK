@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import java.util.Locale
+import com.example.androidautobuildapk.core.preferences.UserPreferences
 
 open class BaseActivity : AppCompatActivity() {
     override fun attachBaseContext(newBase: Context) {

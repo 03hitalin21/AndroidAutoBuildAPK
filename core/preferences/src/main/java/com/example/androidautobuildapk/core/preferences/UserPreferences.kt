@@ -1,4 +1,4 @@
-package com.example.androidautobuildapk
+package com.example.androidautobuildapk.core.preferences
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatDelegate
