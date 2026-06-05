@@ -1,6 +1,7 @@
 package com.example.androidautobuildapk
 
 import android.app.Application
+import com.example.androidautobuildapk.core.preferences.UserPreferences
 
 class HokmApplication : Application() {
     override fun onCreate() {

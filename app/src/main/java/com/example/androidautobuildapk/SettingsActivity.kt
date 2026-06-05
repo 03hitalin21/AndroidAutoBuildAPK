@@ -3,6 +3,7 @@ package com.example.androidautobuildapk
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Spinner
+import com.example.androidautobuildapk.core.preferences.UserPreferences
 
 class SettingsActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

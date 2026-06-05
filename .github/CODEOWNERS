@@ -1,0 +1,8 @@
+# Default ownership for all repository changes.
+* @maintainers
+
+# Build, CI, and release-sensitive files should receive focused review.
+/build-logic/ @maintainers
+/gradle/ @maintainers
+/.github/ @maintainers
+/scripts/ @maintainers

@@ -1,4 +1,7 @@
+enableFeaturePreview("VERSION_CATALOGS")
+
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         gradlePluginPortal()
         google()
@@ -13,4 +16,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "AndroidAutoBuildAPK"
-include ':app'
+include(":app")
+include(":core:preferences")

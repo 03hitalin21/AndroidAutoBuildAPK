@@ -2,6 +2,7 @@ package com.example.androidautobuildapk
 
 import android.widget.Toast
 import com.google.android.material.button.MaterialButton
+import com.example.androidautobuildapk.core.preferences.UserPreferences
 
 object ArticleActions {
     fun bind(activity: BaseActivity, articleName: String) {
