@@ -9,10 +9,16 @@
     <string name="menu_terms">Terms</string>
     <string name="menu_history">History of Hokm</string>
     <string name="menu_trivia">Hokm Trivia</string>
+    <string name="menu_learning_path">Learning Mode</string>
+    <string name="menu_card_hierarchy">Card hierarchy</string>
+    <string name="menu_strategy_guides">Strategy guides</string>
+    <string name="menu_partner_tactics">Partner play tactics</string>
+    <string name="menu_advanced_techniques">Advanced techniques</string>
+    <string name="menu_sources">Sources</string>
 
-    <string name="about_content">This app is a lightweight offline encyclopedia for Hokm.\n\nVersion 1 focuses on fast startup, clean text pages, and simple navigation.\n\nFuture versions can add images, diagrams, and optional media.</string>
+    <string name="about_content">Hokm Encyclopedia is an offline educational guide for Hokm, also known as Court Piece or Rang. It combines rules, card hierarchy, learning paths, strategy examples, partner-play tactics, a searchable glossary, review questions, bookmarks, favorites, and source notes.\n\nAll instructional explanations are original and created by the Hokm Encyclopedia team so the app offers more than a basic copied rule sheet.</string>
     <string name="settings_content">Settings page (starter version).\n\nIn this first release, no configurable options are enabled yet.\n\nFuture updates can include font size, dark mode, and language preferences.</string>
-    <string name="rules_content">Hokm Rules (short starter text).\n\n1) Hokm is usually played by 4 players in teams of two.\n2) Each round has a trump suit chosen by the Hakem.\n3) Players must follow suit when possible.\n4) If a player cannot follow suit, they may play trump or any other card.\n5) The team that wins most tricks wins the hand.</string>
+    <string name="rules_content">Rules of Hokm.\n\nHokm is normally played by four players in two partnerships. The Hakem chooses the trump suit after seeing the opening packet, players must follow the led suit when possible, and the highest card of the led suit wins unless a trump card is legally played. A team usually wins the hand by taking seven tricks.\n\nThis app expands those basics with card hierarchy, examples, common mistakes, partner coordination, and step-by-step learning lessons.</string>
     <string name="terms_content">Hokm Terms (starter glossary).\n\nHakem: The player who chooses trump.\nTrump (Hokm): The suit that can beat cards from other suits.\nTrick: One set of four played cards, one per player.\nLead: The first card played in a trick.\nFollow suit: Playing the same suit as the lead card when possible.</string>
     <string name="history_content">History of Hokm.
 
@@ -27,8 +33,105 @@ Over time, families and local groups created small rule variations, but the core
 • Team communication is indirect: players cannot reveal cards, so timing and card memory are important.
 • Winning early tricks can help read opponents, but holding strong cards for later can also be decisive.
 • Many players learn Hokm at home, making it both a game and a cultural tradition.</string>
+    <string name="learning_path_body">Learning Mode: Beginner → Intermediate → Advanced
+
+Beginner lesson 1: Table setup and goal
+Four players sit in two fixed partnerships. Partners sit opposite each other. Your first goal is not to win every card; it is to help your partnership reach seven tricks before the other team. Think in tricks, not individual cards. A low card can be useful if it saves a winner for later.
+
+Beginner lesson 2: Follow suit before anything else
+When a suit is led, every player who has that suit must play it. This rule creates the main memory challenge. If spades are led and a player discards a diamond, the table now knows that player is void in spades.
+
+Beginner scenario
+Lead: clubs. You hold club 3, club king, heart 8, and two trumps. Correct move in most early tricks: play club 3 if partner is not depending on you to win. Why: you follow suit, keep club king as future control, and avoid wasting trump before you know whether opponents are short in clubs.
+
+Intermediate lesson 1: Count suits
+There are 13 cards in each suit. Each time a suit is played, reduce the remaining count in your head. When eight or nine cards of a suit are visible, the last high card in that suit becomes powerful because fewer players can follow it.
+
+Intermediate lesson 2: Read partner signals legally
+You cannot announce your cards, but your choices still communicate information. Leading a suit twice can suggest strength or a planned exhaustion of that suit. Refusing to trump when void can suggest that your trump cards are too valuable to spend on a small trick.
+
+Advanced lesson 1: Plan the hand in phases
+Early phase: discover voids and protect top cards. Middle phase: decide whether to draw trumps or save them. End phase: count exact winners and stop opponent runs.
+
+Advanced scenario
+Trump is hearts. Your team has five tricks, opponents have four. You hold heart ace, heart 10, spade king, and diamond 2. Opponent leads spade ace. Correct move if you are void in spades: usually trump with heart 10, not heart ace. Why: you win a critical sixth trick while keeping heart ace as guaranteed control for the seventh trick unless another higher trump remains.</string>
+
+    <string name="card_hierarchy_body">Card hierarchy and trick control
+
+Standard rank order
+Within each suit the usual high-to-low order is A, K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2. The highest card of the led suit wins unless a trump card is played by someone who cannot follow suit.
+
+Trump hierarchy
+Trump cards use the same internal order, but any trump beats any non-trump card when trump is legally played. Example: if diamonds are trump and clubs are led, the diamond 2 beats the club ace if the diamond player had no clubs.
+
+Why hierarchy matters
+Beginners often see only the current trick. Strong players ask three questions: 1) Can my partner already win this trick? 2) Will spending a high card create a future winner? 3) Does playing trump reveal or protect information?
+
+Practical example
+Lead is spade queen. Partner plays spade ace. You hold spade king and spade 4. Correct move: play spade 4. Why: partner already controls the trick, so spade king remains a later winner after the ace is gone.
+
+Common mistake
+Do not automatically play your highest card because it feels safer. High cards are resources. Use them when they change the result of the trick, protect partner, or establish later control.</string>
+
+    <string name="strategy_guides_body">Strategy guides
+
+Beginner strategy: protect obvious winners
+If your partner is currently winning the trick, avoid overtaking unless there is a clear reason. Keeping your high card creates another possible trick later.
+
+Beginner mistake to avoid
+Wasting trump on a trick your partner is already winning. This turns one team trick into the same team trick plus a lost trump.
+
+Intermediate strategy: create and use voids
+A void lets you trump a suit later. If you are short in a side suit, you may safely spend low cards in that suit early so you can cut it later. But avoid making your plan too obvious if opponents can draw your trumps.
+
+Intermediate scenario
+Trump is spades. You hold no diamonds, two small spades, and several clubs. Opponent leads diamond king. If partner is not winning and the trick matters, trump with the smallest spade that is likely to hold. Why: you convert a losing diamond trick into a team trick while preserving the larger spade for later.
+
+Advanced strategy: manage tempo
+Tempo means who leads next and which suit they can force. Sometimes winning a trick is less important than making the correct player lead. If your partner has shown strength in clubs, you may allow partner to win so clubs can be led again.
+
+Advanced scenario
+Your left opponent is void in clubs and has been trumping them. Your partner leads club ace. You are last to play and can overtake with club king, but opponent already threw off a low card. Correct move: do not overtake. Why: partner keeps lead and can decide whether to continue clubs, switch to trump, or protect the endgame.</string>
+
+    <string name="partner_tactics_body">Partner play tactics
+
+Core idea
+Hokm partnership play is indirect. You cannot reveal your hand, but you can support partner through timing, conservation, and suit choice.
+
+Tactic 1: Do not steal partner winners
+If partner is clearly winning a trick, use the lowest legal card unless overtaking gives your team a stronger next lead.
+
+Tactic 2: Return partner suit when it is safe
+If partner led a suit and won, returning that suit later may help partner cash remaining high cards or discover opponent voids.
+
+Tactic 3: Protect partner trump
+If partner appears to have strong trump control, avoid forcing partner to spend trump on small side-suit tricks. Instead, win side suits when you can and let partner save trump for decisive moments.
+
+Tactic 4: Watch what partner discards
+A discard often says, indirectly, which suits are weak or no longer useful. If partner discards a low diamond while void in hearts, partner may not value diamonds and may prefer another suit led.
+
+Common mistake
+Trying to signal by illegal speech or gestures can cause disputes and marketplace reviewers may see the app as unclear about fair play. This app teaches legal, observation-based coordination only.</string>
+
+    <string name="advanced_techniques_body">Advanced techniques
+
+Technique 1: Trump drawing
+Drawing trump means leading trump repeatedly to remove opponents trumps. Use it when your side has the highest remaining trump or strong side-suit winners that need protection. Avoid it when your partner has small trumps needed to cut side suits.
+
+Technique 2: Endgame counting
+Near the end, count exact cards instead of general strength. Ask: which trumps are unplayed, which suits are exhausted, and who will be forced to lead? A small card can become a winner if everyone else is void or trapped.
+
+Technique 3: Sacrifice for information
+Sometimes playing a low card and losing is correct because it reveals who is void, who has trump, and which high cards remain. This is useful before deciding whether to spend ace or trump control.
+
+Technique 4: Stop opponent runs
+If an opponent begins cashing a long suit, decide whether to cut immediately or save trump for a higher-value trick. Cutting too early can expose your trump; cutting too late can allow opponents to reach seven.
+
+Advanced mistake to avoid
+Holding every trump until the end. Trumps are powerful, but unused power does not score tricks. Spend trump when it changes tempo, protects partner, or prevents opponents from reaching a winning count.</string>
+
     <string name="content_sources_note">Sources and copyright note:
-• The explanatory lessons, glossary examples, quiz questions, and strategy notes in this app are original content written by the Hokm Encyclopedia app team.
+• All content in this app is original and created by the Hokm Encyclopedia team. The explanatory lessons, glossary examples, quiz questions, and strategy notes use original wording written for this app.
 • Factual background was cross-checked against public rule summaries for Hokm, Court Piece, Rang, and general trick-taking card-game terminology, including Pagat card-game rules (https://www.pagat.com), Bicycle Cards rules resources (https://bicyclecards.com/how-to-play), and Encyclopaedia Britannica background on playing cards (https://www.britannica.com/topic/playing-card).
 • No third-party article text, images, audio, or video are copied into the app. If future versions use additional books, websites, or media, they will be listed here.</string>
     <string name="sources_title">Sources and copyright note</string>
@@ -40,6 +143,12 @@ Over time, families and local groups created small rule variations, but the core
     <string name="subtitle_terms">Understand key terms and meanings</string>
     <string name="subtitle_history">Explore origins and evolution</string>
     <string name="subtitle_trivia">Test your knowledge and have fun</string>
+    <string name="subtitle_learning_path">Beginner to advanced step-by-step lessons</string>
+    <string name="subtitle_card_hierarchy">Understand rank, trump, and control</string>
+    <string name="subtitle_strategy_guides">Practical examples for real hands</string>
+    <string name="subtitle_partner_tactics">Coordinate without illegal table talk</string>
+    <string name="subtitle_advanced_techniques">Counting, endgames, and tempo</string>
+    <string name="subtitle_sources">Originality and attribution notes</string>
     <string name="already_on_home">You are already on Home</string>
     <string name="coming_soon">Coming soon</string>
 
