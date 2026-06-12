@@ -8,13 +8,13 @@
     android:orientation="vertical"
     android:padding="20dp">
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Theme"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_theme_label"/>
     <Spinner android:id="@+id/themeSpinner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Font size"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/settings_font_size_label"/>
     <Spinner android:id="@+id/fontSpinner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Language"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/settings_language_label"/>
     <Spinner android:id="@+id/languageSpinner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
 </LinearLayout>
 </ScrollView>
