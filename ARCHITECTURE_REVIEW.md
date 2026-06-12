@@ -9,7 +9,7 @@ root/
 ├── app/
 │   ├── build.gradle
 │   └── src/
-│       ├── main/java/com/example/androidautobuildapk/
+│       ├── main/java/com/hokmencyclopedia/app/
 │       ├── main/res/
 │       ├── test/
 │       └── androidTest/

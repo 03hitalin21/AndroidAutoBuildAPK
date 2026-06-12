@@ -2,7 +2,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "com.example.androidautobuildapk.buildlogic"
+group = "com.hokmencyclopedia.app.buildlogic"
 
 
 dependencies {

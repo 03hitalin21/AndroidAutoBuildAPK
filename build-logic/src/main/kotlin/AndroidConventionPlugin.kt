@@ -20,7 +20,7 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                 configureAndroidDefaults(this, includeInstrumentationRunner = true)
 
                 defaultConfig {
-                    applicationId = "com.example.androidautobuildapk"
+                    applicationId = "com.hokmencyclopedia.app"
                     targetSdk = libsVersion("targetSdk").toInt()
 
                     val versionCodeProp = findProperty("appVersionCode")
